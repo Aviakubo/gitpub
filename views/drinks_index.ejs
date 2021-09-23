@@ -24,6 +24,14 @@
             </li>
         <% } %>
     </ul>
-    
+
+    <ul>
+    <% for(let i = 0; i < allDrinks.length; i++) { %>
+        <li>
+            <a href="/food/<%= i %>"><%= allFood[i].name %></a>
+        </li>
+    <% } %>
+    </ul>
+
 </body>
 </html>
