@@ -19,10 +19,4 @@ app.get('/drinks/:indexOfDrinksArray', (req, res) => {
     });
 });
 
-// app.get('/drinks/:indexOfDrinksArray', (req, res) => {
-//     res.render('drinks_show.ejs', { //second param must be an object
-//         drink: drinks[req.params.indexOfDrinksArray] //there will be a variable available inside the ejs file called fruit, its value is fruits[req.params.indexOfFruitsArray]
-//     });
-// })
-
 app.listen(3000);
