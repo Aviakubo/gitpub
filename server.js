@@ -13,4 +13,8 @@ app.get('/drinks', (req, res) => {
     res.render("drinks_index.ejs", { allDrinks: drinks});
 });
 
+app.get('/drinks/:id', (req, res) => {
+    res.send(req.params.id);
+});
+
 app.listen(3000);
