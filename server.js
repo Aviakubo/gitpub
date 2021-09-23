@@ -21,11 +21,11 @@ app.get('/drinks/:indexOfDrinksArray', (req, res) => {
 });
 
 app.get('/food', (req, res) => {
-    res.render("drinks_index.ejs", {allFood: food});
+    res.render('food_index.ejs', {allFood: food});
 });
 
 app.get('/food/:indexOfFoodArray', (req, res) => {
-    res.render('drinks_show.ejs', {
+    res.render('food_show.ejs', {
         food: food[req.params.indexOfFoodArray]
     });
 });
